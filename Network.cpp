@@ -171,7 +171,7 @@ int network::train(double input[], double output[])
 	 {
 		 for (int j = 0; j < hSize; j++) 
 		 {
-			 hoConnect[i][j] += deltaOutput[i] * outputActual_Activated[i] * (1 - outputActual_Activated[i]) * hiddenLayer_Activated[j]                                 * learningRate;
+			 hoConnect[i][j] += deltaOutput[i] * outputActual_Activated[i] * (1 - outputActual_Activated[i]) * hiddenLayer_Activated[j] * learningRate;
 		 }
 	 }
 	rate++;
